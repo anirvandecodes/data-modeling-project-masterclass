@@ -1,0 +1,31 @@
+location_id,city,state,country,region,postal_code
+1,New York,NY,US,Northeast,10001
+2,Brooklyn,NY,US,Northeast,11201
+3,Philadelphia,PA,US,Northeast,19101
+4,Boston,MA,US,Northeast,02101
+5,Los Angeles,CA,US,West,90001
+6,San Francisco,CA,US,West,94101
+7,San Diego,CA,US,West,92101
+8,Seattle,WA,US,West,98101
+9,Portland,OR,US,West,97201
+10,Phoenix,AZ,US,West,85001
+11,Houston,TX,US,South,77001
+12,Dallas,TX,US,South,75201
+13,Austin,TX,US,South,78701
+14,San Antonio,TX,US,South,78201
+15,Miami,FL,US,South,33101
+16,Orlando,FL,US,South,32801
+17,Atlanta,GA,US,South,30301
+18,Nashville,TN,US,South,37201
+19,Chicago,IL,US,Midwest,60601
+20,Columbus,OH,US,Midwest,43201
+21,Detroit,MI,US,Midwest,48201
+22,Minneapolis,MN,US,Midwest,55401
+23,Denver,CO,US,Midwest,80201
+24,Charlotte,NC,US,South,28201
+25,Raleigh,NC,US,South,27601
+26,Las Vegas,NV,US,Other,89101
+27,Salt Lake City,UT,US,Other,84101
+28,Kansas City,MO,US,Other,64101
+29,St. Louis,MO,US,Other,63101
+30,New Orleans,LA,US,Other,70112

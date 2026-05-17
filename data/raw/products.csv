@@ -1,0 +1,41 @@
+product_id,sku,product_name,category,subcategory,brand,unit_price,cost_price
+1,PB14,ProBook 14,Electronics,Laptops,TechBrand,899.99,500.0
+2,UL15,UltraSlim 15,Electronics,Laptops,TechBrand,1199.99,680.0
+3,WSX,WorkStation X,Electronics,Laptops,CompuMark,1599.99,900.0
+4,PXA,Pixel A,Electronics,Smartphones,TechBrand,699.99,320.0
+5,NVS,Nova S,Electronics,Smartphones,GadgetCo,549.99,240.0
+6,BB1,Budget B1,Electronics,Smartphones,EcoPhone,299.99,120.0
+7,USBH,USB-C Hub,Electronics,Accessories,GadgetCo,49.99,18.0
+8,WMSE,Wireless Mouse,Electronics,Accessories,TechBrand,29.99,10.0
+9,BTER,Bluetooth Earbuds,Electronics,Accessories,SoundMax,79.99,28.0
+10,LPST,Laptop Stand,Electronics,Accessories,ErgoCo,39.99,14.0
+11,MCTEE,Classic Tee,Clothing,Mens,StyleCo,19.99,6.0
+12,MSJN,Slim Jeans,Clothing,Mens,DenimCo,59.99,22.0
+13,MHXL,Hoodie XL,Clothing,Mens,StyleCo,49.99,18.0
+14,MPOLO,Polo Shirt,Clothing,Mens,StyleCo,34.99,12.0
+15,WSDRS,Summer Dress,Clothing,Womens,FashionX,49.99,16.0
+16,WYOGA,Yoga Pants,Clothing,Womens,ActiveWear,39.99,14.0
+17,WBLSE,Blouse Classic,Clothing,Womens,FashionX,34.99,11.0
+18,WCOAT,Winter Coat,Clothing,Womens,WarmCo,129.99,55.0
+19,KTEE,Kids Tee Pack,Clothing,Kids,StyleCo,14.99,5.0
+20,KJNS,Kids Jeans,Clothing,Kids,DenimCo,29.99,10.0
+21,NSPN,Non-Stick Pan,Home & Kitchen,Cookware,ChefLine,34.99,12.0
+22,KS6P,Knife Set 6pc,Home & Kitchen,Cookware,ChefLine,59.99,22.0
+23,CISK,Cast Iron Skillet,Home & Kitchen,Cookware,HeavyDuty,49.99,20.0
+24,AF5L,Air Fryer 5L,Home & Kitchen,Appliances,HomeAppl,89.99,38.0
+25,CFMK,Coffee Maker,Home & Kitchen,Appliances,HomeAppl,59.99,22.0
+26,BLNP,Blender Pro,Home & Kitchen,Appliances,HomeAppl,79.99,30.0
+27,TPLS,Throw Pillow Set,Home & Kitchen,Decor,HomeDecor,24.99,8.0
+28,CVSP,Canvas Print,Home & Kitchen,Decor,ArtHouse,39.99,14.0
+29,TLMP,Table Lamp,Home & Kitchen,Decor,HomeDecor,44.99,16.0
+30,YGMT,Yoga Mat,Sports,Fitness,FitGear,29.99,10.0
+31,RSBN,Resistance Bands,Sports,Fitness,FitGear,19.99,6.0
+32,JMRP,Jump Rope,Sports,Fitness,FitGear,14.99,4.0
+33,DB10,Dumbbell 10lb,Sports,Fitness,IronMax,24.99,9.0
+34,HKBP,Hiking Backpack,Sports,Outdoor,TrailCo,89.99,35.0
+35,WB32,Water Bottle 32oz,Sports,Outdoor,TrailCo,24.99,8.0
+36,CT2P,Camping Tent 2P,Sports,Outdoor,WildCamp,149.99,65.0
+37,TDMB,The Data Mindset,Books,Non-Fiction,PressA,24.99,8.0
+38,CLNB,Cloud Native,Books,Non-Fiction,TechPress,34.99,12.0
+39,TLSB,The Lost Signal,Books,Fiction,PressA,14.99,5.0
+40,DSTB,Desert Storm,Books,Fiction,PressA,12.99,4.0

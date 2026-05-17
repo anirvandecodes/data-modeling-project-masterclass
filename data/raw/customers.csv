@@ -1,0 +1,201 @@
+customer_id,first_name,last_name,email,phone,address,city,state,country,channel
+1,Uma,Brown,uma.brown1@email.com,959-381-5012,3658 Oak St,New York,NY,US,web
+2,Victor,Moore,victor.moore2@email.com,804-532-1520,489 Main St,Chicago,IL,US,mobile
+3,Hank,Thompson,hank.thompson3@email.com,227-674-4257,8929 Elm St,Minneapolis,MN,US,mobile
+4,Olivia,Young,olivia.young4@email.com,206-877-3615,6925 Pine St,Dallas,TX,US,in-store
+5,Eva,Miller,eva.miller5@email.com,304-194-7224,1585 Pine St,Austin,TX,US,in-store
+6,Tina,Wilson,tina.wilson6@email.com,947-570-9785,2046 Elm St,Los Angeles,CA,US,web
+7,Rachel,Taylor,rachel.taylor7@email.com,570-691-4150,1140 Main St,Minneapolis,MN,US,mobile
+8,Yara,Taylor,yara.taylor8@email.com,438-987-2654,6228 Pine St,Chicago,IL,US,phone
+9,Uma,Thomas,uma.thomas9@email.com,579-463-4432,4375 Main St,Philadelphia,PA,US,mobile
+10,Rachel,Davis,rachel.davis10@email.com,673-488-5422,9126 Oak St,Philadelphia,PA,US,in-store
+11,Yara,Johnson,yara.johnson11@email.com,232-924-6168,6573 Pine St,San Diego,CA,US,web
+12,Grace,Young,grace.young12@email.com,417-771-9179,6483 Elm St,Austin,TX,US,mobile
+13,Iris,Jones,iris.jones13@email.com,962-674-9830,4305 Maple St,San Diego,CA,US,phone
+14,Sam,Jackson,sam.jackson14@email.com,424-241-9348,8086 Main St,Jacksonville,FL,US,web
+15,David,Jones,david.jones15@email.com,896-532-2040,6305 Elm St,Philadelphia,PA,US,phone
+16,Quinn,Wilson,quinn.wilson16@email.com,211-796-2876,8798 Pine St,Atlanta,GA,US,in-store
+17,David,Taylor,david.taylor17@email.com,361-564-1053,4316 Maple St,Denver,CO,US,mobile
+18,Quinn,Brown,quinn.brown18@email.com,854-619-4258,2505 Pine St,San Jose,CA,US,mobile
+19,Rachel,Thompson,rachel.thompson19@email.com,813-431-9005,320 Main St,New York,NY,US,in-store
+20,Zoe,Taylor,zoe.taylor20@email.com,259-346-2290,1404 Elm St,San Diego,CA,US,web
+21,Yara,Moore,yara.moore21@email.com,331-775-8787,9008 Oak St,Phoenix,AZ,US,in-store
+22,Quinn,Allen,quinn.allen22@email.com,416-652-4295,5108 Elm St,Denver,CO,US,in-store
+23,Olivia,Thompson,olivia.thompson23@email.com,323-353-4681,1050 Pine St,Boston,MA,US,web
+24,Sam,Moore,sam.moore24@email.com,802-325-1117,1164 Main St,San Diego,CA,US,mobile
+25,Carol,Johnson,carol.johnson25@email.com,272-626-4899,4563 Elm St,Austin,TX,US,mobile
+26,Rachel,Jones,rachel.jones26@email.com,790-584-4981,7750 Elm St,Miami,FL,US,mobile
+27,David,Brown,david.brown27@email.com,562-533-7735,7652 Main St,Denver,CO,US,web
+28,Bob,Jackson,bob.jackson28@email.com,311-354-4139,3117 Maple St,Austin,TX,US,phone
+29,Eva,White,eva.white29@email.com,485-573-5092,1236 Elm St,Philadelphia,PA,US,web
+30,Bob,Moore,bob.moore30@email.com,295-871-4872,2725 Elm St,New York,NY,US,phone
+31,Paul,Miller,paul.miller31@email.com,260-268-7209,36 Elm St,Seattle,WA,US,in-store
+32,Zoe,Harris,zoe.harris32@email.com,633-813-8973,2537 Oak St,San Jose,CA,US,in-store
+33,Grace,Johnson,grace.johnson33@email.com,953-655-1998,5139 Main St,Miami,FL,US,web
+34,Sam,Martin,sam.martin34@email.com,743-261-1931,8321 Main St,Portland,OR,US,mobile
+35,Carol,Allen,carol.allen35@email.com,891-982-4853,6616 Main St,Chicago,IL,US,mobile
+36,Sam,Allen,sam.allen36@email.com,834-183-7868,9563 Maple St,Los Angeles,CA,US,in-store
+37,Iris,Miller,iris.miller37@email.com,444-371-7484,2145 Pine St,Austin,TX,US,phone
+38,Karen,Williams,karen.williams38@email.com,669-736-2638,1201 Maple St,New York,NY,US,mobile
+39,Quinn,Wilson,quinn.wilson39@email.com,557-170-5002,6055 Pine St,Phoenix,AZ,US,mobile
+40,Olivia,Moore,olivia.moore40@email.com,826-926-9666,129 Maple St,San Jose,CA,US,in-store
+41,Victor,Brown,victor.brown41@email.com,470-218-2753,9065 Oak St,Phoenix,AZ,US,in-store
+42,Jake,Allen,jake.allen42@email.com,934-451-4335,4326 Maple St,San Antonio,TX,US,phone
+43,Iris,Johnson,iris.johnson43@email.com,849-533-5533,723 Main St,Chicago,IL,US,in-store
+44,Yara,Jones,yara.jones44@email.com,365-859-8239,9039 Elm St,Dallas,TX,US,web
+45,David,Williams,david.williams45@email.com,758-136-7049,9544 Maple St,Phoenix,AZ,US,mobile
+46,Nate,Jones,nate.jones46@email.com,515-473-1653,5863 Oak St,Los Angeles,CA,US,mobile
+47,Victor,Brown,victor.brown47@email.com,998-673-7658,2533 Oak St,Jacksonville,FL,US,mobile
+48,Zoe,Garcia,zoe.garcia48@email.com,225-283-6442,6746 Oak St,Denver,CO,US,in-store
+49,Frank,Brown,frank.brown49@email.com,239-979-8711,3645 Oak St,Seattle,WA,US,phone
+50,Leo,Taylor,leo.taylor50@email.com,428-124-4164,6529 Pine St,San Diego,CA,US,in-store
+51,Carol,Wilson,carol.wilson51@email.com,856-621-7548,8786 Pine St,Jacksonville,FL,US,web
+52,David,Wilson,david.wilson52@email.com,794-371-1626,1777 Maple St,Philadelphia,PA,US,phone
+53,Leo,Anderson,leo.anderson53@email.com,820-623-2894,6312 Maple St,Denver,CO,US,mobile
+54,Iris,Johnson,iris.johnson54@email.com,201-632-9821,3229 Pine St,Denver,CO,US,phone
+55,Carol,Anderson,carol.anderson55@email.com,521-779-3041,4921 Maple St,Minneapolis,MN,US,in-store
+56,Victor,White,victor.white56@email.com,612-813-5844,9084 Oak St,Austin,TX,US,mobile
+57,Nate,Jackson,nate.jackson57@email.com,830-682-5930,6654 Maple St,Philadelphia,PA,US,web
+58,Jake,Taylor,jake.taylor58@email.com,640-904-6279,7619 Elm St,San Antonio,TX,US,phone
+59,Victor,Miller,victor.miller59@email.com,684-912-3780,1390 Pine St,Portland,OR,US,in-store
+60,Carol,Davis,carol.davis60@email.com,430-925-4262,2415 Main St,San Jose,CA,US,web
+61,Hank,Martin,hank.martin61@email.com,986-174-8461,6791 Maple St,Minneapolis,MN,US,mobile
+62,Wendy,Jackson,wendy.jackson62@email.com,609-349-3417,91 Main St,Nashville,TN,US,phone
+63,Hank,Garcia,hank.garcia63@email.com,675-151-5082,1989 Elm St,Portland,OR,US,mobile
+64,Zoe,Harris,zoe.harris64@email.com,772-709-6198,7252 Maple St,Portland,OR,US,phone
+65,Rachel,Harris,rachel.harris65@email.com,961-982-8777,7374 Pine St,Philadelphia,PA,US,mobile
+66,Uma,Wilson,uma.wilson66@email.com,696-741-4919,4500 Elm St,Portland,OR,US,web
+67,Wendy,Taylor,wendy.taylor67@email.com,478-443-6238,8850 Main St,San Diego,CA,US,mobile
+68,Eva,Davis,eva.davis68@email.com,910-256-4505,1053 Elm St,Seattle,WA,US,phone
+69,Karen,Moore,karen.moore69@email.com,625-163-4388,6884 Elm St,Boston,MA,US,web
+70,Yara,Young,yara.young70@email.com,688-106-6763,4893 Elm St,Seattle,WA,US,phone
+71,Rachel,Moore,rachel.moore71@email.com,425-599-4595,4472 Elm St,Minneapolis,MN,US,phone
+72,Alice,Jackson,alice.jackson72@email.com,884-795-7624,2705 Elm St,Austin,TX,US,mobile
+73,Tina,Moore,tina.moore73@email.com,603-706-1444,1376 Elm St,New York,NY,US,mobile
+74,Olivia,Garcia,olivia.garcia74@email.com,466-488-6363,3468 Elm St,Los Angeles,CA,US,in-store
+75,Karen,Jackson,karen.jackson75@email.com,970-951-7906,4134 Main St,Dallas,TX,US,phone
+76,Alice,Moore,alice.moore76@email.com,558-329-2124,660 Main St,Los Angeles,CA,US,mobile
+77,Grace,Smith,grace.smith77@email.com,356-344-3068,7759 Main St,Minneapolis,MN,US,mobile
+78,Olivia,Wilson,olivia.wilson78@email.com,371-720-2876,2684 Pine St,Jacksonville,FL,US,web
+79,Sam,Smith,sam.smith79@email.com,789-793-7149,6499 Oak St,San Jose,CA,US,web
+80,Sam,Davis,sam.davis80@email.com,913-891-5941,9838 Main St,Houston,TX,US,web
+81,Leo,Moore,leo.moore81@email.com,877-479-2129,8290 Pine St,Denver,CO,US,web
+82,Nate,Martin,nate.martin82@email.com,643-470-8532,2507 Elm St,Houston,TX,US,mobile
+83,Xander,Thompson,xander.thompson83@email.com,830-927-9817,7922 Elm St,Dallas,TX,US,phone
+84,Xander,Young,xander.young84@email.com,530-972-5022,1420 Pine St,Dallas,TX,US,phone
+85,Hank,Harris,hank.harris85@email.com,824-784-7209,5512 Main St,Miami,FL,US,phone
+86,Karen,Garcia,karen.garcia86@email.com,417-463-5232,5577 Pine St,Nashville,TN,US,in-store
+87,Rachel,Smith,rachel.smith87@email.com,395-187-4954,6659 Elm St,Portland,OR,US,mobile
+88,Wendy,Martin,wendy.martin88@email.com,658-911-1282,1525 Pine St,Nashville,TN,US,mobile
+89,Mia,Davis,mia.davis89@email.com,879-695-7046,7754 Maple St,San Jose,CA,US,in-store
+90,Nate,Moore,nate.moore90@email.com,560-819-8434,4439 Pine St,Austin,TX,US,in-store
+91,Hank,Brown,hank.brown91@email.com,523-222-9779,3034 Oak St,San Antonio,TX,US,mobile
+92,Xander,Martin,xander.martin92@email.com,941-703-9595,9778 Pine St,Dallas,TX,US,web
+93,Grace,Taylor,grace.taylor93@email.com,569-283-5952,232 Maple St,San Diego,CA,US,mobile
+94,Iris,Johnson,iris.johnson94@email.com,766-399-3068,8043 Main St,Los Angeles,CA,US,web
+95,Sam,Taylor,sam.taylor95@email.com,690-551-6582,3021 Main St,Nashville,TN,US,in-store
+96,Paul,Brown,paul.brown96@email.com,610-603-2213,9454 Main St,Chicago,IL,US,mobile
+97,Eva,Young,eva.young97@email.com,287-354-2940,9144 Elm St,San Jose,CA,US,mobile
+98,Yara,Thompson,yara.thompson98@email.com,661-553-5871,9643 Elm St,Seattle,WA,US,in-store
+99,Sam,Allen,sam.allen99@email.com,824-857-2625,3405 Oak St,Los Angeles,CA,US,in-store
+100,Victor,Williams,victor.williams100@email.com,445-277-2229,2565 Main St,Philadelphia,PA,US,phone
+101,Olivia,Allen,olivia.allen101@email.com,498-133-4792,4721 Pine St,Nashville,TN,US,phone
+102,Carol,Davis,carol.davis102@email.com,840-703-4241,6966 Main St,Dallas,TX,US,mobile
+103,Uma,Jones,uma.jones103@email.com,345-173-1977,2719 Pine St,Dallas,TX,US,in-store
+104,Olivia,Brown,olivia.brown104@email.com,905-411-7594,4461 Maple St,Boston,MA,US,phone
+105,Olivia,Williams,olivia.williams105@email.com,240-542-6280,9892 Pine St,Minneapolis,MN,US,web
+106,Carol,Davis,carol.davis106@email.com,801-121-5415,9442 Main St,Miami,FL,US,mobile
+107,Paul,Thompson,paul.thompson107@email.com,484-285-8141,8057 Main St,Boston,MA,US,phone
+108,Leo,White,leo.white108@email.com,528-786-2713,2635 Pine St,Austin,TX,US,phone
+109,Wendy,Martin,wendy.martin109@email.com,878-510-1601,7452 Main St,San Jose,CA,US,in-store
+110,Iris,Anderson,iris.anderson110@email.com,991-513-9431,19 Maple St,Houston,TX,US,phone
+111,Nate,Johnson,nate.johnson111@email.com,730-470-9167,7243 Main St,San Antonio,TX,US,mobile
+112,Iris,Moore,iris.moore112@email.com,494-548-8941,1990 Main St,Phoenix,AZ,US,mobile
+113,Wendy,Garcia,wendy.garcia113@email.com,764-114-7684,1528 Oak St,San Jose,CA,US,web
+114,Olivia,Brown,olivia.brown114@email.com,710-833-5781,8338 Pine St,Phoenix,AZ,US,phone
+115,Paul,Martin,paul.martin115@email.com,667-664-3369,6285 Oak St,San Diego,CA,US,mobile
+116,Carol,Wilson,carol.wilson116@email.com,548-906-9318,4378 Main St,Denver,CO,US,in-store
+117,Xander,Taylor,xander.taylor117@email.com,793-775-9022,2435 Elm St,Miami,FL,US,phone
+118,Leo,Anderson,leo.anderson118@email.com,981-656-7180,7461 Pine St,Atlanta,GA,US,mobile
+119,Wendy,Davis,wendy.davis119@email.com,592-339-7730,716 Pine St,Miami,FL,US,phone
+120,Wendy,Jackson,wendy.jackson120@email.com,879-911-3492,8116 Main St,Seattle,WA,US,mobile
+121,Quinn,Young,quinn.young121@email.com,302-995-8213,1634 Maple St,Austin,TX,US,phone
+122,Alice,Jones,alice.jones122@email.com,870-258-2225,7693 Pine St,Denver,CO,US,in-store
+123,Tina,Jackson,tina.jackson123@email.com,536-972-9742,6227 Pine St,Chicago,IL,US,phone
+124,Rachel,Johnson,rachel.johnson124@email.com,270-340-5708,3728 Main St,Minneapolis,MN,US,phone
+125,David,Brown,david.brown125@email.com,370-810-5906,475 Main St,Boston,MA,US,in-store
+126,Zoe,Johnson,zoe.johnson126@email.com,567-483-8056,2386 Oak St,San Jose,CA,US,phone
+127,Sam,Garcia,sam.garcia127@email.com,379-180-7267,3946 Elm St,Philadelphia,PA,US,mobile
+128,Hank,Harris,hank.harris128@email.com,670-361-1153,7623 Pine St,Dallas,TX,US,mobile
+129,Carol,Harris,carol.harris129@email.com,801-406-7951,4098 Elm St,Jacksonville,FL,US,in-store
+130,Grace,Jackson,grace.jackson130@email.com,309-342-7248,9371 Pine St,Nashville,TN,US,in-store
+131,Wendy,Taylor,wendy.taylor131@email.com,874-505-5497,133 Maple St,New York,NY,US,web
+132,Tina,Martin,tina.martin132@email.com,994-918-4770,9947 Pine St,San Jose,CA,US,mobile
+133,Uma,Miller,uma.miller133@email.com,456-794-3240,1592 Main St,Minneapolis,MN,US,in-store
+134,Zoe,Harris,zoe.harris134@email.com,793-473-3153,1477 Pine St,Los Angeles,CA,US,in-store
+135,Xander,White,xander.white135@email.com,405-235-9837,5995 Maple St,Philadelphia,PA,US,in-store
+136,Frank,Wilson,frank.wilson136@email.com,502-864-6549,1887 Elm St,Nashville,TN,US,web
+137,Eva,Davis,eva.davis137@email.com,770-474-2479,6465 Main St,Seattle,WA,US,in-store
+138,Rachel,Brown,rachel.brown138@email.com,577-788-5295,9578 Elm St,Boston,MA,US,in-store
+139,David,Davis,david.davis139@email.com,225-734-6374,9996 Oak St,Nashville,TN,US,web
+140,Uma,Harris,uma.harris140@email.com,864-518-2911,2291 Main St,San Jose,CA,US,web
+141,Jake,Martin,jake.martin141@email.com,299-340-9807,2223 Elm St,Houston,TX,US,phone
+142,Leo,Moore,leo.moore142@email.com,801-860-3531,6798 Main St,Denver,CO,US,phone
+143,Tina,White,tina.white143@email.com,233-806-7070,3560 Elm St,Dallas,TX,US,phone
+144,Hank,Thomas,hank.thomas144@email.com,902-476-9920,5877 Main St,Houston,TX,US,phone
+145,Iris,Miller,iris.miller145@email.com,665-193-4475,9784 Main St,Houston,TX,US,web
+146,Zoe,Anderson,zoe.anderson146@email.com,328-905-4362,1125 Maple St,San Diego,CA,US,mobile
+147,Sam,Miller,sam.miller147@email.com,536-892-3417,9765 Main St,San Diego,CA,US,in-store
+148,Eva,Jones,eva.jones148@email.com,456-917-3858,1802 Main St,Atlanta,GA,US,mobile
+149,Alice,Thomas,alice.thomas149@email.com,802-431-1258,2855 Pine St,San Diego,CA,US,web
+150,Eva,White,eva.white150@email.com,316-863-2041,7803 Elm St,Portland,OR,US,in-store
+151,Quinn,Young,quinn.young151@email.com,662-615-4629,711 Maple St,Houston,TX,US,in-store
+152,Olivia,Smith,olivia.smith152@email.com,690-967-7580,6985 Main St,Los Angeles,CA,US,phone
+153,Wendy,Harris,wendy.harris153@email.com,282-429-3430,1077 Oak St,Chicago,IL,US,in-store
+154,Tina,Young,tina.young154@email.com,929-432-7240,9788 Maple St,Atlanta,GA,US,in-store
+155,Olivia,Thompson,olivia.thompson155@email.com,640-201-2874,9034 Oak St,Minneapolis,MN,US,phone
+156,Olivia,Davis,olivia.davis156@email.com,547-947-8430,6533 Elm St,Denver,CO,US,web
+157,Karen,White,karen.white157@email.com,881-361-7132,2501 Elm St,Austin,TX,US,web
+158,Carol,Williams,carol.williams158@email.com,642-198-7105,2132 Maple St,Chicago,IL,US,web
+159,Sam,Moore,sam.moore159@email.com,537-786-3002,6731 Pine St,Atlanta,GA,US,phone
+160,Xander,Johnson,xander.johnson160@email.com,814-419-6761,1698 Maple St,San Jose,CA,US,mobile
+161,Eva,Martin,eva.martin161@email.com,310-458-7022,1883 Pine St,San Diego,CA,US,mobile
+162,Zoe,White,zoe.white162@email.com,985-938-1430,9978 Pine St,Atlanta,GA,US,web
+163,Frank,Wilson,frank.wilson163@email.com,547-459-1100,2973 Oak St,San Jose,CA,US,phone
+164,Carol,Jones,carol.jones164@email.com,293-864-9691,3525 Elm St,New York,NY,US,phone
+165,Olivia,Anderson,olivia.anderson165@email.com,578-419-6314,9300 Maple St,Philadelphia,PA,US,web
+166,Bob,Jones,bob.jones166@email.com,972-732-1815,1337 Pine St,Philadelphia,PA,US,phone
+167,Victor,White,victor.white167@email.com,821-552-7785,4476 Oak St,Nashville,TN,US,web
+168,Leo,White,leo.white168@email.com,490-794-8972,8634 Pine St,Houston,TX,US,web
+169,Hank,Jackson,hank.jackson169@email.com,256-107-4349,4939 Oak St,Minneapolis,MN,US,mobile
+170,Yara,Wilson,yara.wilson170@email.com,535-222-1126,8150 Elm St,San Jose,CA,US,mobile
+171,Eva,Jackson,eva.jackson171@email.com,920-335-9196,9155 Pine St,Atlanta,GA,US,web
+172,Mia,Johnson,mia.johnson172@email.com,219-570-2275,5130 Maple St,Denver,CO,US,phone
+173,Sam,Jackson,sam.jackson173@email.com,496-217-7636,342 Pine St,Denver,CO,US,mobile
+174,Zoe,Allen,zoe.allen174@email.com,906-470-2443,7156 Main St,Boston,MA,US,mobile
+175,Nate,Young,nate.young175@email.com,736-180-7484,5084 Pine St,Seattle,WA,US,mobile
+176,Karen,Garcia,karen.garcia176@email.com,722-748-2868,8694 Maple St,Chicago,IL,US,mobile
+177,Yara,Thomas,yara.thomas177@email.com,944-938-3419,3872 Main St,Jacksonville,FL,US,mobile
+178,Iris,Miller,iris.miller178@email.com,816-256-2234,2903 Elm St,Philadelphia,PA,US,phone
+179,Yara,Young,yara.young179@email.com,659-797-6295,5180 Oak St,Miami,FL,US,phone
+180,Carol,Martin,carol.martin180@email.com,846-410-5500,9690 Main St,Boston,MA,US,in-store
+181,Quinn,Williams,quinn.williams181@email.com,672-562-1616,933 Pine St,San Jose,CA,US,in-store
+182,Carol,Williams,carol.williams182@email.com,808-619-7299,7582 Maple St,Minneapolis,MN,US,web
+183,Olivia,Young,olivia.young183@email.com,529-719-8792,8215 Oak St,San Antonio,TX,US,web
+184,Olivia,Brown,olivia.brown184@email.com,931-186-9266,2828 Main St,Austin,TX,US,mobile
+185,Wendy,Harris,wendy.harris185@email.com,736-635-3600,5963 Pine St,Boston,MA,US,in-store
+186,Mia,White,mia.white186@email.com,895-712-1857,5483 Main St,Austin,TX,US,in-store
+187,David,Moore,david.moore187@email.com,490-358-3463,5462 Main St,Seattle,WA,US,mobile
+188,Leo,Taylor,leo.taylor188@email.com,332-709-2388,5073 Maple St,Seattle,WA,US,phone
+189,Uma,Anderson,uma.anderson189@email.com,886-819-9624,1532 Elm St,Phoenix,AZ,US,in-store
+190,Alice,Thomas,alice.thomas190@email.com,384-319-6598,7968 Oak St,San Jose,CA,US,mobile
+191,Eva,Jones,eva.jones191@email.com,502-964-2657,8318 Maple St,Chicago,IL,US,web
+192,Victor,Anderson,victor.anderson192@email.com,334-711-7172,2528 Oak St,Minneapolis,MN,US,mobile
+193,Wendy,Allen,wendy.allen193@email.com,938-548-1715,6732 Pine St,Philadelphia,PA,US,mobile
+194,Olivia,Allen,olivia.allen194@email.com,970-866-8355,3834 Maple St,San Jose,CA,US,mobile
+195,Jake,Martin,jake.martin195@email.com,576-794-8218,7565 Pine St,San Antonio,TX,US,phone
+196,Quinn,Thompson,quinn.thompson196@email.com,365-936-4271,9907 Oak St,Denver,CO,US,in-store
+197,Bob,Martin,bob.martin197@email.com,767-205-9452,2043 Pine St,Jacksonville,FL,US,web
+198,Yara,Garcia,yara.garcia198@email.com,660-625-3414,7168 Main St,Dallas,TX,US,mobile
+199,Olivia,Thomas,olivia.thomas199@email.com,624-154-7495,8225 Pine St,New York,NY,US,mobile
+200,Mia,Williams,mia.williams200@email.com,429-128-6221,1624 Pine St,Jacksonville,FL,US,mobile
