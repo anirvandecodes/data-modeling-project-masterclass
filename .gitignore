@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Planning and script docs
+VIDEO_SCRIPT.md
+MASTERCLASS_PLAN.md

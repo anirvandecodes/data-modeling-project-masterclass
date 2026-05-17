@@ -7,15 +7,17 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## The Problem: "Why Do My Numbers Not Match?"
+# MAGIC ## The Starting Point
 # MAGIC
-# MAGIC You have been there. The sales team pulls a revenue report from Salesforce. Finance pulls theirs from the data warehouse. The CEO pulls one from a BI dashboard. Three different tools. Three different numbers. Everyone in the room is confident their number is correct.
+# MAGIC Imagine you work at an e-commerce company.
 # MAGIC
-# MAGIC This is not a technology problem. It is a **data modeling problem**.
+# MAGIC One day your manager comes to you and says:
 # MAGIC
-# MAGIC When data is not organized deliberately — when there are no agreed-upon definitions, no consistent grain, no shared dimension tables — every analyst invents their own logic. They filter differently, join differently, and aggregate differently. The numbers diverge.
+# MAGIC > **"We have been collecting data for years — orders, customers, products, returns. But we cannot really use any of it. Can you build us a proper data system?"**
 # MAGIC
-# MAGIC **Data modeling is the discipline that prevents this.** It is the practice of designing how data is structured, named, and related so that everyone asking the same question gets the same answer.
+# MAGIC That is it. No detailed requirements. Just a pile of raw data and a business that needs answers.
+# MAGIC
+# MAGIC This is the project we are going to build together — from a blank slate to a fully working data system that can answer real business questions in seconds.
 # MAGIC
 # MAGIC ---
 
