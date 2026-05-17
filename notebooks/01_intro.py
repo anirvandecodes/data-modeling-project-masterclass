@@ -137,82 +137,33 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## The Star Schema We Are Building
+# MAGIC ## The Schema We Are Building
 # MAGIC
-# MAGIC A **star schema** puts one central fact table at the middle, surrounded by dimension tables. It looks like a star — hence the name. The fact table stores measurements (revenue, quantity, order count). The dimension tables store context (who, what, where, when).
-# MAGIC
-# MAGIC Here is the complete schema we will build across this masterclass:
+# MAGIC A **star schema** puts one fact table at the center, surrounded by dimension tables. Here is the shape of what we are building — two fact tables, four shared dimension tables. Don't worry about the column details yet. By Notebook 04, you will have designed every table yourself from first principles, and this diagram will make complete sense.
 # MAGIC
 # MAGIC ```
-# MAGIC                         workspace.gold.*
+# MAGIC                        workspace.gold.*
 # MAGIC
-# MAGIC                       ┌─────────────────┐
-# MAGIC                       │   dim_date      │
-# MAGIC                       │─────────────────│
-# MAGIC                       │ date_key (PK)   │
-# MAGIC                       │ full_date        │
-# MAGIC                       │ year, quarter    │
-# MAGIC                       │ month, week      │
-# MAGIC                       │ is_weekend       │
-# MAGIC                       │ is_month_end     │
-# MAGIC                       └────────┬────────┘
-# MAGIC                                │
-# MAGIC ┌─────────────────┐            │            ┌─────────────────┐
-# MAGIC │  dim_customer   │            │            │  dim_product    │
-# MAGIC │─────────────────│            │            │─────────────────│
-# MAGIC │ customer_key(PK)│            │            │ product_key (PK)│
-# MAGIC │ customer_id      │            │            │ product_id      │
-# MAGIC │ full_name        │            │            │ product_name    │
-# MAGIC │ email            │            │            │ category        │
-# MAGIC │ segment          │            │            │ subcategory     │
-# MAGIC │ signup_date      │            │            │ brand           │
-# MAGIC └────────┬────────┘            │            └────────┬────────┘
-# MAGIC          │                     │                     │
-# MAGIC          │         ┌───────────┴───────────┐        │
-# MAGIC          └────────►│      fact_orders       │◄───────┘
-# MAGIC                    │───────────────────────│
-# MAGIC                    │ order_key (PK)         │
-# MAGIC                    │ order_id               │
-# MAGIC                    │ customer_key (FK)      │◄──────── dim_customer
-# MAGIC                    │ product_key (FK)       │◄──────── dim_product
-# MAGIC                    │ location_key (FK)      │◄──────── dim_location
-# MAGIC                    │ order_date_key (FK)    │◄──────── dim_date
-# MAGIC                    │ quantity               │
-# MAGIC                    │ unit_price             │
-# MAGIC                    │ total_amount           │
-# MAGIC                    │ channel                │
-# MAGIC                    └───────────────────────┘
-# MAGIC                                │
-# MAGIC                    ┌───────────┴───────────┐
-# MAGIC                    │      fact_returns      │
-# MAGIC                    │───────────────────────│
-# MAGIC                    │ return_key (PK)        │
-# MAGIC                    │ order_id               │
-# MAGIC                    │ customer_key (FK)      │◄──────── dim_customer (shared)
-# MAGIC                    │ product_key (FK)       │◄──────── dim_product (shared)
-# MAGIC                    │ return_date_key (FK)   │◄──────── dim_date   (shared)
-# MAGIC                    │ return_amount          │
-# MAGIC                    │ reason                 │
-# MAGIC                    └───────────────────────┘
-# MAGIC                                │
-# MAGIC                                ▼
-# MAGIC                    ┌─────────────────┐
-# MAGIC                    │  dim_location   │
-# MAGIC                    │─────────────────│
-# MAGIC                    │ location_key(PK)│
-# MAGIC                    │ location_id     │
-# MAGIC                    │ city            │
-# MAGIC                    │ state           │
-# MAGIC                    │ region          │
-# MAGIC                    │ country         │
-# MAGIC                    └─────────────────┘
+# MAGIC                       ┌──────────────┐
+# MAGIC                       │   dim_date   │
+# MAGIC                       └──────┬───────┘
+# MAGIC                              │
+# MAGIC  ┌───────────────┐           │           ┌───────────────┐
+# MAGIC  │  dim_customer │           │           │  dim_product  │
+# MAGIC  └───────┬───────┘           │           └───────┬───────┘
+# MAGIC          │                   │                   │
+# MAGIC          └──────────┬────────┴───────────────────┘
+# MAGIC                     │
+# MAGIC             ┌───────┴────────┐        ┌────────────────┐
+# MAGIC             │  fact_orders   │        │  dim_location  │
+# MAGIC             └───────┬────────┘        └───────┬────────┘
+# MAGIC                     │                         │
+# MAGIC             ┌───────┴────────┐                │
+# MAGIC             │  fact_returns  │◄───────────────┘
+# MAGIC             └────────────────┘
 # MAGIC ```
 # MAGIC
-# MAGIC ### Key observations about this schema:
-# MAGIC
-# MAGIC - **Two fact tables**: `fact_orders` (sales) and `fact_returns` (refunds). Both facts share the same dimension tables — these are called **conformed dimensions**. This means you can join both facts together on the same customer or product dimension.
-# MAGIC - **Surrogate keys**: Every dimension table has a `_key` column (e.g., `customer_key`) that is a synthetic ID we generate. This is separate from the source system's `customer_id`. We'll explain why in Notebook 04.
-# MAGIC - **date_key as integer**: The date dimension uses an integer key like `20240315` (YYYYMMDD format) instead of a date type. Integer joins are slightly faster at scale.
+# MAGIC The **full schema diagram** — every table with all columns, data types, primary keys, foreign keys, and relationship annotations — is revealed in **Notebook 04** after you have built the conceptual and logical models. That is the right moment to see it, because by then you will understand every decision it encodes.
 # MAGIC
 # MAGIC ---
 

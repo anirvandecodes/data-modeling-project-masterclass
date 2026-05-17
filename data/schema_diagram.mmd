@@ -1,0 +1,87 @@
+erDiagram
+    dim_date {
+        int date_key PK
+        date full_date
+        int year
+        int quarter
+        int month
+        string month_name
+        int week_of_year
+        int day_of_week
+        string day_name
+        boolean is_weekend
+        boolean is_month_end
+        boolean is_quarter_end
+        int fiscal_year
+        int fiscal_quarter
+    }
+
+    dim_product {
+        string product_key PK
+        int source_product_id
+        string sku
+        string product_name
+        string category
+        string subcategory
+        string brand
+        double unit_price
+        double cost_price
+    }
+
+    dim_location {
+        string location_key PK
+        int source_location_id
+        string city
+        string state
+        string country
+        string region
+        string postal_code
+    }
+
+    dim_customer {
+        string customer_key PK
+        int source_customer_id
+        string first_name
+        string last_name
+        string email
+        string city
+        string state
+        string channel
+        date start_date
+        date end_date
+        boolean is_current
+    }
+
+    fact_orders {
+        string order_line_key PK
+        string customer_key FK
+        string product_key FK
+        string location_key FK
+        int order_date_key FK
+        int ship_date_key FK
+        string order_number
+        int quantity
+        double unit_price
+        double discount_amount
+        double total_amount
+    }
+
+    fact_returns {
+        string return_key PK
+        string customer_key FK
+        string product_key FK
+        int return_date_key FK
+        string order_number
+        string return_reason
+        int quantity_returned
+        double return_amount
+    }
+
+    dim_customer ||--o{ fact_orders : "places"
+    dim_product  ||--o{ fact_orders : "ordered in"
+    dim_location ||--o{ fact_orders : "fulfilled at"
+    dim_date     ||--o{ fact_orders : "order_date_key"
+    dim_date     ||--o{ fact_orders : "ship_date_key"
+    dim_customer ||--o{ fact_returns : "returns"
+    dim_product  ||--o{ fact_returns : "returned"
+    dim_date     ||--o{ fact_returns : "return_date_key"

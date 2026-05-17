@@ -236,6 +236,41 @@
 # COMMAND ----------
 
 # MAGIC %md
+# MAGIC ---
+# MAGIC ## The Complete Data Model Diagram
+# MAGIC
+# MAGIC You have now designed every table from first principles:
+# MAGIC - Notebook 02 — identified the entities
+# MAGIC - Notebook 03 — defined the relationships between them
+# MAGIC - This notebook — added every attribute, type, and key
+# MAGIC
+# MAGIC Here is the full schema: every table, every column, every relationship, every key marker — all in one place. This is the blueprint we will build across Notebooks 06–15.
+# MAGIC
+# MAGIC ![Full Data Model Schema](../data/schema_diagram.png)
+# MAGIC
+# MAGIC **How to read this diagram:**
+# MAGIC - `PK` — Primary Key. Uniquely identifies each row.
+# MAGIC - `FK` — Foreign Key. References the PK of another table.
+# MAGIC - `||--o{` — One-to-many relationship (one dim row ↔ many fact rows).
+# MAGIC - Tables in `dim_*` — dimension tables. Store context (who, what, where, when).
+# MAGIC - Tables in `fact_*` — fact tables. Store events and measurements.
+# MAGIC
+# MAGIC **Key design decisions encoded in this diagram:**
+# MAGIC
+# MAGIC | Decision | Where | Why |
+# MAGIC |---|---|---|
+# MAGIC | `customer_key STRING` not `customer_id INT` | All tables | MD5 surrogate key — stable, source-system independent |
+# MAGIC | `date_key INT` (e.g. 20240315) | `dim_date` | YYYYMMDD integer — faster join than DATE type |
+# MAGIC | `start_date`, `end_date`, `is_current` | `dim_customer` | SCD Type 2 — preserves full customer history |
+# MAGIC | `order_date_key` AND `ship_date_key` in `fact_orders` | `fact_orders` | Role-playing dimension — same `dim_date` used twice |
+# MAGIC | `order_number` in `fact_orders` (no dim table) | `fact_orders` | Degenerate dimension — identifier with no attributes |
+# MAGIC | Same `dim_customer`, `dim_product`, `dim_date` in both facts | Both facts | Conformed dimensions — enables cross-fact analysis |
+# MAGIC
+# MAGIC ---
+
+# COMMAND ----------
+
+# MAGIC %md
 # MAGIC ## Seeing the Natural Keys We'll Replace
 # MAGIC
 # MAGIC Let's look at the natural keys that currently exist in our Bronze orders table. These are the `customer_id`, `product_id`, and `location_id` integers coming from the source system. We'll replace these with surrogate keys when building our Gold fact table.

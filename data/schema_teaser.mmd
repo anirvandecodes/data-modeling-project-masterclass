@@ -1,0 +1,32 @@
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#6366f1",
+    "primaryTextColor": "#ffffff",
+    "primaryBorderColor": "#4338ca",
+    "lineColor": "#94a3b8",
+    "background": "#0f172a",
+    "mainBkg": "#6366f1",
+    "nodeBorder": "#4338ca",
+    "fontSize": "18px",
+    "fontFamily": "ui-sans-serif, system-ui, sans-serif"
+  }
+}}%%
+flowchart TB
+    classDef dim fill:#6366f1,stroke:#4338ca,color:#ffffff,rx:8,ry:8
+    classDef fact fill:#0ea5e9,stroke:#0284c7,color:#ffffff,rx:8,ry:8
+
+    dc["dim_customer\nSCD Type 2"]:::dim
+    dp["dim_product\nMD5 surrogate key"]:::dim
+    dl["dim_location\nMD5 surrogate key"]:::dim
+    dd["dim_date\nCalendar flags"]:::dim
+    fo["fact_orders\nGrain: order line item"]:::fact
+    fr["fact_returns\nGrain: return transaction"]:::fact
+
+    dc --> fo
+    dp --> fo
+    dl --> fo
+    dd --> fo
+    dd --> fr
+    dc --> fr
+    dp --> fr
