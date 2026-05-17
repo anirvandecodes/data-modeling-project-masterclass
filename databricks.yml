@@ -25,26 +25,26 @@ resources:
 
       tasks:
 
-        - task_key: setup
+        - task_key: physical_setup
           description: "Create schemas and volume"
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/00_setup
+            notebook_path: ${workspace.file_path}/notebooks/06_physical_setup
             source: WORKSPACE
 
         - task_key: bronze_ingest
           description: "Land raw CSVs into Bronze Delta tables"
           depends_on:
-            - task_key: setup
+            - task_key: physical_setup
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/01_bronze_ingest
+            notebook_path: ${workspace.file_path}/notebooks/07_bronze_ingest
             source: WORKSPACE
 
         - task_key: dim_date
-          description: "Build dim_date — 2020 to 2025"
+          description: "Build dim_date — calendar dimension 2020–2025"
           depends_on:
             - task_key: bronze_ingest
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/02_dim_date
+            notebook_path: ${workspace.file_path}/notebooks/08_dim_date
             source: WORKSPACE
 
         - task_key: dim_product
@@ -52,7 +52,7 @@ resources:
           depends_on:
             - task_key: bronze_ingest
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/03_dim_product
+            notebook_path: ${workspace.file_path}/notebooks/09_dim_product
             source: WORKSPACE
 
         - task_key: dim_location
@@ -60,15 +60,15 @@ resources:
           depends_on:
             - task_key: bronze_ingest
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/04_dim_location
+            notebook_path: ${workspace.file_path}/notebooks/10_dim_location
             source: WORKSPACE
 
-        - task_key: dim_customer_scd2
-          description: "Build dim_customer with SCD Type 2 (full history)"
+        - task_key: dim_customer
+          description: "Build dim_customer with SCD Type 2"
           depends_on:
             - task_key: bronze_ingest
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/05b_dim_customer_scd2
+            notebook_path: ${workspace.file_path}/notebooks/12_dim_customer_scd2
             source: WORKSPACE
 
         - task_key: fact_orders
@@ -77,9 +77,9 @@ resources:
             - task_key: dim_date
             - task_key: dim_product
             - task_key: dim_location
-            - task_key: dim_customer_scd2
+            - task_key: dim_customer
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/06_fact_orders
+            notebook_path: ${workspace.file_path}/notebooks/14_fact_orders
             source: WORKSPACE
 
         - task_key: fact_returns
@@ -87,43 +87,35 @@ resources:
           depends_on:
             - task_key: dim_date
             - task_key: dim_product
-            - task_key: dim_customer_scd2
+            - task_key: dim_customer
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/07_fact_returns
+            notebook_path: ${workspace.file_path}/notebooks/15_fact_returns
             source: WORKSPACE
 
-        - task_key: advanced_facts
+        - task_key: fact_types
           description: "Periodic snapshot, accumulating snapshot, factless facts"
           depends_on:
             - task_key: fact_orders
             - task_key: fact_returns
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/10_fact_table_types
+            notebook_path: ${workspace.file_path}/notebooks/13_fact_design_and_types
             source: WORKSPACE
 
-        - task_key: snowflake_schema
-          description: "Build snowflake schema variant of dim_product"
+        - task_key: star_vs_snowflake
+          description: "Build snowflake schema variant and compare"
           depends_on:
             - task_key: fact_orders
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/11_star_vs_snowflake
+            notebook_path: ${workspace.file_path}/notebooks/05_star_schema_design
             source: WORKSPACE
 
         - task_key: analytics
-          description: "Answer all 4 business questions + bonus metrics"
+          description: "Answer all 4 business questions + business metrics"
           depends_on:
             - task_key: fact_orders
             - task_key: fact_returns
           notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/08_analytics_queries
-            source: WORKSPACE
-
-        - task_key: metrics
-          description: "Compute business metrics: DAU, MAU, AOV, cohort retention, return rate"
-          depends_on:
-            - task_key: analytics
-          notebook_task:
-            notebook_path: ${workspace.file_path}/notebooks/12_metrics_and_product_sense
+            notebook_path: ${workspace.file_path}/notebooks/16_analytics_and_metrics
             source: WORKSPACE
 
       queue:
